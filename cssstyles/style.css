@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+.mulish-font {
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: 1rem;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    max-width: 90%;
+    margin: 3rem auto;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* shared styles */
+section {
+    margin-bottom: 6.25rem;
+}
+
+.orange {
+    color: rgb(255, 84, 0);
+}
+
+.dark-1 {
+    color: rgb(19, 19, 24);
+}
+
+.dark-2 {
+    color: rgb(66, 66, 71);
+}
+
+.primary-btn {
+    border-radius: 8px;
+    background: rgb(255, 84, 0);
+    color: rgb(255, 255, 255);
+    padding: 1rem 2rem;
+    font-weight: 700;
+}
+
+.section-title {
+    font-weight: 800;
+    font-size: 2.5rem;
+    margin: 0 0 2rem 0;
+    color: rgb(19, 19, 24);
+}
+
+.description {
+    font-size: 1rem;
+    line-height: 1.625rem;
+}
+
+
+.nav-options a:hover {
+    color: rgb(255, 84, 0);
+}
+
+
+
+/* nav bar related styles */
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 3rem;
+}
+
+.nav-options ul {
+    list-style: none;
+    display: flex;
+    gap: 2.75rem;
+}
+
+.nav-options a {
+    text-decoration: none;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo img {
+    max-width: 48px;
+    max-height: 56px;
+    margin-right: 1rem;
+}
+
+.nav-logo h3 {
+    font-size: 2.25rem;
+    font-weight: 800;
+}
+
+
+/* banner related styles */
+.explore-your-travel {
+    padding: 6.5rem 11.5rem;
+    background-image: linear-gradient(180.00deg, rgba(19, 19, 24, 0.8), rgba(19, 19, 24, 0) 100%), url(../Images/Group\ 13\ \(1\)\ \(1\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.banner-content-container {
+    max-width: 800px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.banner-content-container h1 {
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+.banner-content-container p {
+    line-height: 1.625rem;
+    margin: 1.5rem 3.875rem;
+}
+
+.input-fields {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    gap: 1rem;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.input-fields input,
+select,
+button {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    width: 10.875rem;
+    border: none;
+    cursor: pointer;
+    color: rgba(19, 19, 24, 0.5);
+}
+
+/* popular section */
+.popular {
+    display: flex;
+    gap: 3.3rem;
+}
+
+.popular .popular-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.popular .popular-text-container ul {
+    max-width: 425px;
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.popular-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+
+/* responsive media query for mobile device */
+@media screen and (max-width:576px) {
+    .navbar-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-options ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+
+    .banner-content-container p {
+        margin: .5rem .5rem;
+    }
+
+    .input-fields,
+    .popular {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .input-fields input,
+    select,
+    button {
+        width: 255px;
+    }
+
+    .popular img {
+        width: 100%; 
+    }
+}
+
+/* responsive media query for tablet device */
+@media screen and (min-width:576px) and (max-width:992px){
+    .popular {
+        flex-direction: column;
+        align-items: center;
+    }
+    .popular img {
+        width: 100%; 
+    }
+}
