@@ -342,12 +342,53 @@ button {
 
 /* responsive media query for tablet device */
 @media screen and (min-width:576px) and (max-width:992px) {
-    .popular {
+    .popular, .navbar-container {
         flex-direction: column;
         align-items: center;
     }
 
+    .explore-your-travel{
+        /* height: max-content; */
+        height: auto;
+        padding: 1rem 0 1rem 0;
+    }
+    .banner-content-container{
+        /* margin: 1rem; */
+        width: 90%;
+        height: 90%;
+    }
+    .banner-content-container h1 {
+        font-size: 2rem;
+    }
+    .banner-content-container p {
+        line-height: 1rem;
+        font-size: 0.8rem;
+    }
+
+    .input-fields{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-items: center;
+    }
+    .input-fields input, .select, select, .input-fields>button {
+        width: 100%;
+    }
+
     .popular img {
         width: 100%;
+    }
+    
+    .parent-container {
+        display: block;
+    }
+
+    .child-1,
+    .child-2,
+    .child-3,
+    .child-4,
+    .child-5,
+    .child-6,
+    .child-7{
+        margin-bottom: 1rem;
     }
 }
