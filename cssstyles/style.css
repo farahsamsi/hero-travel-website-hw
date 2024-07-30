@@ -266,6 +266,23 @@ button {
 
 }
 
+
+/* deals section styles */
+.deals-banners-container{
+    width: 100%;
+}
+.deal-banner-container{
+    height: 31.25rem;
+    width: 100%;
+    background-image: url(../Images/Group\ 39.png);
+    border-radius: 16px;
+
+    border: 1px solid red;
+}
+
+
+
+
 /* responsive media query for mobile device */
 @media screen and (max-width:576px) {
     .explore-your-travel{
